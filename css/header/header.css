@@ -1,0 +1,38 @@
+header{
+  padding: 20px;
+}
+
+nav {
+    background-color: #141414;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+  }
+  
+  nav ul li {
+    margin-right: 30px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #e50914;
+  }

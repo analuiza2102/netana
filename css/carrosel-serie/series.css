@@ -1,0 +1,67 @@
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 20px 0;
+    background-color: black;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+      }
+  
+  
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 300px;
+    margin-right: 20px;
+    scroll-snap-align: start;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+  
+  .carousel-item h3 {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    text-align: center;
+    color: #fff;
+  }
+
+
+  .carousel-item:hover {
+    transform: scale(1.05);
+    z-index: 1;
+  }
+  
+  .carousel-item:hover img {
+    opacity: 0.5;
+  }
+  
+  .carousel-item:hover .overlay {
+    opacity: 1;
+  }
+  
+  .carousel-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 5px;
+    transition: height 0.2s ease-out, opacity 0.2s ease-out;
+    opacity: 0;
+  }
+  
+  .carousel-item:hover .overlay {
+    height: auto;
+  }
+  
+  
